@@ -1,0 +1,108 @@
+nav {
+    background-color: #007bff;
+}
+h1 {
+    color: white;
+}
+.fa-bars {
+    color: white;
+    font-size: 1.5em;
+}
+body {
+    font-family: 'Courgette';
+}
+.nav-item {
+    margin-bottom: 0.8em;
+}
+#navbarText {
+    background-color: white;
+}
+#navbarText i {
+    color: black;
+}
+.btn {
+    border-radius: 20px;
+    width: 100%;
+}
+nav i, section i {
+    margin-right: 0.3em;
+}
+.btn {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }  to {
+        margin-left: 0%;
+    }
+}
+li {
+    font-family: 'Roboto';
+}
+h2, .Infos, .card-header {
+    display: none;
+}
+footer {
+    border-top: solid #007bff 10px;
+}
+footer i {
+    color: #007bff;
+}
+
+
+@media (min-width: 768px) {
+    .btn-primary {
+        display: none;
+    }
+    .list-group-item {
+        text-align: start;
+    }
+    .card-header {
+        display: revert;
+    }    
+}
+
+@media (min-width:992px) {
+    .card-header, #Apropos {
+        display: none;
+
+    }
+    .Infos {
+        font-size: 1.2em;
+    }
+    h2, .Infos {
+        display: revert;
+    }
+    h2 {
+        color: #007bff;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 1.3em;
+    }
+    .nav-item a {
+        box-shadow: inset 0 0 0 0 #007bff;
+        color: #007bff;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    .nav-item a:hover {
+        box-shadow: inset 250px 0 0 0 #007bff;
+        color: white;
+    }
+    nav {
+        background-color:white;
+        border-bottom: solid #007bff 10px;
+    }
+    .navbar-brand {
+        color: #007bff;
+        text-decoration: underline;
+        font-size: 1.5em;
+    }
+    ul li {
+        margin-right: 3em;
+    }
+}
